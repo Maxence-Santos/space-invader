@@ -29,6 +29,11 @@ def main():
     player = Player()
     ammos = []
     fire_rate = 18 # The higher , the slower the player shoots
+    
+    for i in range(3):
+            hearts.append(Lives(lives_X))
+            lives_X += 20
+            
     ########### MAIN LOOP ################
     while RUNNING:
         input = pygame.key.get_pressed() # Gets input
